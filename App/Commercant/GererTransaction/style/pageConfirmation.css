@@ -1,0 +1,33 @@
+.pageConfirmation {
+  width: 80%;
+  height: auto;
+  border: 1px solid;
+  padding: 30px;
+}
+
+.btnLect {
+  background-color: #0000f3;
+  border-radius: 28px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 5px 21px;
+}
+.btnLect:hover {
+  background-color: #5555b5;
+}
+
+.validerArea {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.vEta {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.vEta1 {
+  grid-column: 4;
+  grid-row: 1;
+}

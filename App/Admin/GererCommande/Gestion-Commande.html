@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="../Admin/GererCommande/style/Gestion-Commande.css" />
+<fieldset>
+    <legend>Gérer commandes</legend>
+    <section>
+        <div class="table-container">
+            <table id="commandesTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Référence</th>
+                        <th>Entreprise</th>
+                        <th>Date création</th>
+                        <th>Etat</th>
+                        <th>Facture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+            <button onclick="consulter()" id="btnConsulterCommande" disabled>Consulter</button>
+            <button onclick="executerCommande()" id="btnExecuterCommande" disabled>Exécuter Commande</button>
+        </div>
+    </section>
+</fieldset>

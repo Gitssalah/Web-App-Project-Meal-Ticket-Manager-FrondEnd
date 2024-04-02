@@ -1,0 +1,128 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 1100px;
+  height: 510px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.conteneur-zones {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+.zone-gauche,
+.zone-droite {
+  flex: 1;
+  margin: 10px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+
+.center-button {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+legend {
+  font-size: 14px;
+}
+
+button {
+  margin: 12px auto;
+  padding: 5px 10px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.error-message {
+  color: red;
+}
+
+.form-button {
+  text-align: right;
+}
+
+/* Styles pour input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Styles pour textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Styles pour slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+

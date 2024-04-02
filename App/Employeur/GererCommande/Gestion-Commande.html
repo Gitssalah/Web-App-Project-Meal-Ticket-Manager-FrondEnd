@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="../Employeur/GererCommande/style/Gestion-Commande.css" />
+<fieldset>
+      <legend>Créer une commande</legend>
+        <form class="form-container" onsubmit="submitForm(event)" id="form" enctype="multipart/form-data">
+            <div class="form-group">
+              <button type="button" class="btn btn-export me-2" onclick="telechargerTemplateListeSalaries()">
+                <i class="bi bi-file-arrow-down"></i> Template Excel
+              </button>
+              <br>
+              <label for="listeSalaries" class="form-label">Liste des salariés</label>
+              <div class="input-group">
+                <input type="file" class="form-control d-none" id="listeSalaries" accept=".xlsx,.xls">
+                <button type="button" class="btn" style="border-radius: 5px;background-color: #0000f3; color: white;" onclick="document.getElementById('listeSalaries').click()">
+                  <i class="bi bi-file-arrow-up"></i> Importer fichier
+                </button>
+                <span class="input-group-text">(Merci d'importer un fichier excel respectant le template)</span>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label for="plafondQuotidien" class="form-label">Plafond quotidien</label>
+              <div class="d-flex align-items-center">
+                <input type="range" id="plafondQuotidien" class="form-range" min="1" max="100"  value="10" oninput="updateSliderValue(this.value)">
+                <output for="effectif" id="effectifValue">10</output>
+              </div>
+            </div>
+      
+            <div class="text-center">
+              <button type="submit" class="btn btn-valider">Valider</button>
+            </div>
+          </form>
+</fieldset>
+<fieldset>
+    <legend>Liste des commandes</legend>
+    <section>
+        <div class="table-container">
+            <table id="commandesTable">
+                <thead>
+                    <tr>
+                        <th>Référence</th>
+                        <th>Date création</th>
+                        <th>Etat</th>
+                        <th>Facture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</fieldset>

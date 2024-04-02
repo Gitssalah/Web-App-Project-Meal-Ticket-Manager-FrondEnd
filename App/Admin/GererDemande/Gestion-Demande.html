@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../Admin/GererDemande/style/Gestion-Demande.css" />
+
+<fieldset>
+    <legend>Liste Demandes Employeurs</legend>
+    <section>
+        <div class="table-container">
+            <table id="employersTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>ID</th>
+                        <th>Employeur</th>
+                        <th>Date création</th>
+                        <th>Etat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttonsEmployeur">
+            <button onclick="consulterDemandeEmployeur()" id="btnConsulterEmployeur" disabled>Consulter</button>
+            <button onclick="rejeterDemandeEmployeur()" id="btnRejeterEmployeur" disabled>Rejeter</button>
+            <button onclick="validerDemandeEmployeur()" id="btnValiderEmployeur" disabled>Valider</button>
+        </div>
+    </section>
+</fieldset>
+
+<fieldset>
+    <legend>Liste Demandes Commerçants</legend>
+    <section>
+        <div class="table-container">
+            <table id="commercantsTable">
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>ID</th>
+                        <th>Commerçant</th>
+                        <th>Date création</th>
+                        <th>Etat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="buttonsCommercant">
+            <button onclick="consulterDemandeCommercant()" id="btnConsulterCommercant" disabled>Consulter</button>
+            <button onclick="rejeterDemandeCommercant()" id="btnRejeterCommercant" disabled>Rejeter</button>
+            <button onclick="validerDemandeCommercant()" id="btnValiderCommercant" disabled>Valider</button>
+        </div>
+    </section>
+</fieldset>

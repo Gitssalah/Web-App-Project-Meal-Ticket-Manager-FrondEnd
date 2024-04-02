@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivre Solde</title>
+    <link rel="stylesheet" href="../Salarie/SuivreSolde/style/SuivreSolde.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="sold-info-container">
+            <div class="total-sold">Solde total: ... €</div>
+            <div class="daily-sold">Solde du jour: ... €</div>
+        </div>
+        <div class="pie-chart-container">
+            <canvas id="pie-chart" width="250" height="250"></canvas>
+        </div>
+    </div>
+    <fieldset>
+        <legend>Suivre Solde</legend>
+        <section>
+            <div class="table-container">
+                <table id="TransactionsTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Montant</th>
+                            <th>Commerçant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </fieldset>
+    <script src="./script/SuivreSolde.js"></script>
+</body>
+</html>

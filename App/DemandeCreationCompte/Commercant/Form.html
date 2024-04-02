@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande de création de compte (Commerçant)</title>
+  <link rel="stylesheet" href="./style/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div>
+  <div class="form-button">
+    <button onclick="window.location.href = '../../Connexion/Connexion.html'">
+      <i class="fas fa-user"></i> Se connecter
+    </button>
+  </div>
+  <div class="form-button">
+    <button onclick="window.location.href = '../Employeur/Form.html';">Demande Création de Compte (Employeur)</button>
+  </div>
+  <form action="#" id="Form">
+    <fieldset>
+      <legend>Demande de création de compte (Commerçant)</legend>
+      <div class="conteneur-zones">
+        <div class="zone-gauche">
+          <div class="row">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+          </div>
+          <div class="row">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" required>
+          </div>
+          <div class="row">
+            <label for="nom_entreprise">Nom de l'entreprise</label>
+            <input type="text" id="nom_entreprise" name="nomEntreprise" required>
+          </div>
+          <div class="row">
+            <label for="adresse">Adresse</label>
+            <textarea type="text" id="adresse" name="adresse" required> </textarea>
+          </div>
+        </div>
+        <div class="zone-droite">
+          <div class="row">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+          </div>
+          <div class="row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="row">
+            <label for="numero_siret">Numéro Siret</label>
+            <input type="text" id="numero_siret" name="numSiret" required>
+          </div>
+          <div class="row">
+            <label for="code_postal">Code postal</label>
+            <input type="text" id="code_postal" name="codePostal" required>
+          </div>
+        </div>
+      </div>
+      <div class="row center-button">
+        <button type="submit" onclick="validateForm()">Envoyer</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js" ></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+  <script src="./script/script.js"></script> 
+</body>
+</html>

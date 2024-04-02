@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre");
+
+.container {
+  width: 100%;
+  max-width: 600px; /* Ajustez selon vos besoins */
+  padding: 20px;
+}
+
+.PageUtilise {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.EspaceButton {
+  background: 0 0;
+  color: #05f;
+  height: auto;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 0 solid transparent;
+  margin-top: 15px;
+  border-radius: 17px;
+  cursor: pointer;
+  width: 200px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.EspaceButton:hover {
+  background-color: #bbe2ec;
+}
+
+.header1 {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 20px;
+  color: #05f;
+  text-shadow: rgb(89, 99, 151) 2px 2px 2px;
+}
+
+.custom-col-logo {
+  flex: 0 0 10%;
+  max-width: 7%;
+}
+
+.acteur {
+  color: #05f;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.acteur2 {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}

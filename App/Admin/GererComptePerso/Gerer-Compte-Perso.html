@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="../Admin/GererComptePerso/style/Gerer-Compte-Perso.css" />
+
+<fieldset>
+    <title>Modification de compte perso</title>
+    
+</head>
+<body>
+    <div class = "acteur">Modification du compte personnel</div><br><br>
+    <form>
+        <div>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom"><br><br>
+        </div>
+        <div>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom"><br><br>
+        </div>
+        <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" disabled><br><br>
+        </div>
+        <div>
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone"><br><br>
+        </div>
+        <div>
+            <label for="service">Service :</label>
+            <input type="text" id="service" name="service"><br><br>
+        </div>
+        <div class="button-container">
+        <button onclick="modifierCompte()" id="btnModifierCompte">Enregistrer</button>
+    </div>
+    </form>
+</body>
+</html>

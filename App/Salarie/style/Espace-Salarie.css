@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Sans+Libre");
+
+.PageUtilise {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+.partie-gauche {
+  flex: 1;
+  background-color: transparent;
+  height: 85vh;
+  text-align: center;
+  padding: 20px;
+  overflow-y: scroll;
+  max-height: calc(100vh - 40px);
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+  text-align: center;
+}
+
+.partie-droite {
+  flex: 5;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pie-chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2em;
+}
+
+#pie-chart {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1em;
+}
+
+.sold-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.total-sold {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #05f;
+  text-shadow: 0.5px 0.5px 0.5px rgb(89, 99, 151);
+  margin-bottom: 0.5em;
+}
+
+.daily-sold {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #05f;
+  text-shadow: 0.5px 0.5px 0.5px rgb(89, 99, 151);
+  margin-bottom: 0.5em;
+}
+.numero{
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #05f;
+  text-shadow: 0.5px 0.5px 0.5px rgb(89, 99, 151);
+  margin-bottom: 0.5em;
+}
+
+.details-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #05f;
+  border-radius: 17px;
+  padding: 10px;
+  border: solid 1px #05f;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.details-button:hover {
+  background-color: #bbe2ec;
+}
+
+.header1 {
+  font-family: "Averia Sans Libre", cursive;
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: 20px;
+  color: #05f;
+  text-shadow: rgb(89, 99, 151) 2px 2px 2px;
+}
+
+.center-element {
+  text-align: center;
+}
+
+.custom-col-logo {
+  flex: 0 0 10%;
+  max-width: 7%;
+}
+
+.EspaceButton {
+  background: 0 0;
+  color: #05f;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 0 solid transparent;
+  margin-top: 15px;
+  border-radius: 17px;
+  display: inline-block;
+  cursor: pointer;
+  width: 200px;
+  padding-top: 10px;
+}
+
+.EspaceButton:hover {
+  background-color: #bbe2ec;
+}
+
+.acteur {
+  color: #05f;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: solid 1px;
+}
